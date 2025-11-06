@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/Logo-CHIS-CYBERSCHOOL-RGB-small.png">
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+    </button>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">
+                    <a href="https://chiscyberschool.com/" target="_blank">
+                        <img src="icons/Logo-CHIS-CYBERSCHOOL-RGB-small.png" alt="">
+                    </a>
+                    <!-- Chis Cyber School -->
+                </span>
+                <button onclick="toggleSidebar()" id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="why.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M424-320q0-81 14.5-116.5T500-514q41-36 62.5-62.5T584-637q0-41-27.5-68T480-732q-51 0-77.5 31T365-638l-103-44q21-64 77-111t141-47q105 0 161.5 58.5T698-641q0 50-21.5 85.5T609-475q-49 47-59.5 71.5T539-320H424Zm56 240q-33 0-56.5-23.5T400-160q0-33 23.5-56.5T480-240q33 0 56.5 23.5T560-160q0 33-23.5 56.5T480-80Z"/></svg>
+                    <span>Why?</span>
+                </a>
+            </li>
+            <li>
+                <a href="impact.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-120v-80q38 0 68-14.5t65-40.5q30 25 65.5 39.5T347-201q33 0 69-14t65-40q32 28 66 41t68 13q33 0 64.5-13t69.5-41q39 30 69 42.5t62 12.5v80q-35 0-67.5-9.5T749-157q-32 20-66.5 28.5T615-120q-33 0-67.5-8.5T481-157q-29 19-64 28t-70 9q-34 0-68-9t-66-28q-31 18-64.5 27.5T80-120Zm0-180v-80q0-97 37.5-181T220-707q65-62 152.5-97.5T560-840q33 0 65.5 3.5T684-827q-21 32-32.5 67.5T640-693q0 55 39 94t94 39h107v80H773q-89 0-151-62t-62-151q0-14 2-29.5t6-30.5q-74 18-121 76.5T400-540q0 36 11.5 68.5T444-410q8-5 17-11.5t19-13.5q29 26 67 40t68 14q30 0 67-14.5t67-39.5q32 24 63.5 39.5T880-380v80q-35 0-67.5-9.5T749-337q-32 20-65 28.5t-69 8.5q-36 0-72-10t-62-27q-31 19-65 27.5t-69 9.5q-35 1-69-9t-65-28q-31 18-64.5 27.5T80-300Zm265-81h10q5 0 10-1-22-35-33.5-75T320-540q0-81 37-146.5T460-794v44q-62 16-114.5 48.5t-92 78.5Q214-577 190-520.5T161-400q15-9 26-16t26-19q37 27 67 40.5t65 13.5Zm-75-168Z"/></svg>
+                    <span>Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="solution.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"/></svg>
+                    <span>Solution</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container" id="why">
+            <div class="content">
+                <h2>Why?</h2>
+                <h3>Mengapa kita harus membuang sampah pada tempatnya?</h3>
+                <p>Kita harus membuang sampah pada tempatnya untuk mencegah banjir dan penyumbatan saluran air. Ini juga menjaga kesehatan dan lingkungan dengan mencegah pencemaran tanah/air, mengurangi sumber penyakit, serta melindungi ekosistem darat dan laut dari kerusakan sampah beracun dan plastik.</p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero explicabo dolor maxime placeat quod ipsam impedit ex ducimus reprehenderit, alias voluptatum suscipit perferendis. Tenetur autem illum ratione tempore architecto.</p> -->
+                <!-- Ganti jumlah kata kira-kira sebanyak 30-40 kata -->
+            </div>
+            <div class="image">
+                <img src="https://siu-bijiplastik.com/wp-content/uploads/2022/04/Sampah-Plastik-Sangat-Bahaya-Untuk-laut-S.jpg"" alt="image">
+            </div>
+        </div>
+        <div class="container">
+            <h2>Fun Fact</h2>
+            <p>Kalian mungkin tidak menyadari bahwa sampah yang dibuang ke sungai atau selokan seringkali berakhir di laut, di mana ia berkumpul menjadi Pulau Sampah Raksasa (Great Pacific Garbage Patch). Ini bukan pulau padat, melainkan area besar di Samudra Pasifik, ukurannya diperkirakan tiga kali lipat dari negara Perancis, yang dipenuhi oleh miliaran keping plastik—sampah abadi yang butuh hingga 450 tahun untuk terurai.</p>
+        </div>
+        <div class="container">
+            <footer>&copy; Samuel Wijaya</footer>
+        </div>
+    </main>
+</body>
+</html>
