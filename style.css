@@ -200,8 +200,8 @@ footer{
 
 .image img{
     max-width: 450px;
-    border: 2px solid var(--line-clr);
     border-radius: 10px;
+    border: 2px solid var(--line-clr);
     display: block;
     object-fit: contain;
     transition: transform 0.2s ease;
@@ -252,10 +252,10 @@ footer{
 
 #impact .image img, #solution .image img{
     width: 100%;
-    border: 2px solid var(--line-clr);
+    height: 100%;
     border-radius: 10px;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.2s ease;
 }
 
